@@ -1,0 +1,123 @@
+.testimonials {
+	background-color: map-get($foundation-palette, primary);
+	clear: both;
+	.testimonials-slider {
+		margin: 0;
+	}
+	.testimonials-slide {
+		@include grid-row(12, 'collapse', 100%, true, map-get($grid-column-gutter, medium));
+	}
+	.testimonial-wrap {
+		@include grid-column(10, map-get($grid-column-gutter, medium)*2);
+		@include grid-column-position(center);
+		padding: map-get($grid-column-gutter, medium)*2 0;
+		text-align: center;
+		color: $white;
+		@include breakpoint(medium) {
+	  		@include grid-column(8, map-get($grid-column-gutter, medium)*2);
+			@include grid-column-position(center);
+	  	}
+	  	@include breakpoint(large) {
+	  		@include grid-column(7, map-get($grid-column-gutter, medium)*2);
+			@include grid-column-position(center);
+	  	}
+		h3, h5, p {
+			color: $white;	
+		}
+	}
+	.testimonial {
+		font-style: italic;
+		line-height: 1.4;
+		@include breakpoint(medium) {
+			font-size: rem-calc(26);
+		}
+	}
+	.author {
+		font-size: rem-calc(18);
+		margin: 0;
+	}
+	.company {
+		font-size: rem-calc(18);
+		font-weight: $bold;
+	}
+	.slick-arrow {
+    	top: 0;
+	    padding: 0;
+	    height: 100%;
+	    color: $white;
+	    width: 8%;
+    	@include transition(.3s ease-in-out);
+    	@include breakpoint(medium) {
+    		width: 17%;
+    		font-size: rem-calc(80);
+    	}
+    	@include breakpoint(medium) {
+    		width: 20%;
+    		font-size: rem-calc(120);
+    	}
+    	&:focus {
+    		background-color: transparent;
+		}
+    	&:hover {
+    		background-color: rgba(darken(map-get($foundation-palette, primary), 10), .5);
+    	}
+	}
+}
+.single, .page:not(.home), .blog {
+	.testimonials {
+		background-color: $white;
+		.testimonial-wrap {
+			color: map-get($foundation-palette, primary);
+		}
+		h3, h5, p, .slick-arrow {
+			color: map-get($foundation-palette, primary);
+		}
+	}
+	.slick-arrow {
+		&:focus {
+    		background-color: transparent;
+		}
+		&:hover {
+    		color: darken(map-get($foundation-palette, primary), 30);
+    		background-color: transparent;
+    	}
+	}
+}
+.single, .page-template-default, .blog {
+	.widget-area {
+		.testimonials {
+			.testimonial-wrap {
+				@include breakpoint(medium) {
+					padding: 0;
+				    width: auto;
+				    margin: 0 0 rem-calc(70);
+				}
+			}
+			.read-more {
+				font-style: italic;
+			}
+			.author, .company {
+				font-size: rem-calc(14);
+			}
+		}
+		.slick-arrow {
+		    width: 10%;
+		    font-size: 1.5rem;
+		}
+		.testimonial {
+			@include breakpoint(medium) {
+				font-size: rem-calc(22);
+			}
+		}
+		.slick-dots {
+		    bottom: rem-calc(30);
+		    left: 0;
+		    right: 0;
+		    margin: 0;
+		    li button:before {
+		    	width: rem-calc(15);
+    			height: rem-calc(15);
+		    }
+		}
+	}
+}

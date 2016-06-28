@@ -1,0 +1,211 @@
+$break-admin: 783px;
+$admin-bar-height-small: rem-calc(46);
+$admin-bar-height-large: rem-calc(32);
+
+/* Felicitas Saurenbach Brand Colors */
+
+/* Social Media Brand Colors */
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+
+/* Font weights */
+
+$light: 300;
+$normal: 400;
+$bold:  700;
+
+@mixin font-smoothing($value: antialiased) {
+  -webkit-font-smoothing: $value;
+}
+%upper {
+    text-transform: uppercase;
+}
+body {
+    background-color: $white;
+}
+.button, .top-bar {
+    font-family: $header-font;
+}
+.button {
+    @include font-smoothing(auto);
+}
+a:visited {
+    //color: darken($primary-color, 20);
+}
+input {
+    border-radius: 0;
+}
+label {
+    color: inherit;
+}
+.admin-bar {
+    padding-top: rem-calc(46);
+    @media screen and (min-width: $break-admin) {
+        padding-top: rem-calc(32);
+    }
+    .site-header.scrolled {
+    	margin-top: rem-calc(46);
+         @media screen and (min-width: $break-admin) {
+            margin-top: rem-calc(32);
+        }
+	}
+}
+.f-topbar-fixed.admin-bar {
+    padding-top: $admin-bar-height-small;
+    @media screen and (min-width: $break-admin) {
+        padding-top: $admin-bar-height-large;
+    }
+    @include breakpoint(large only) {
+        padding-top: $admin-bar-height-large;
+    }
+}
+.vcard {
+    margin: 0 0 rem-calc(10);
+    padding: 0;
+    border-style: none;
+}
+/* Documentation fixes */
+code {
+    display: block;
+    margin: $callout-margin;
+}
+.button-group br {
+    display: none;
+}
+.entry-title {
+    font-size: rem-calc(28);
+    line-height: 110%;
+    @include breakpoint(medium) {
+        font-size: rem-calc(28);
+    }
+    @include breakpoint(large) {
+        font-size: rem-calc(34);
+    }
+}
+.entry-subtitle {
+    text-transform: none;
+    font-size: rem-calc(24);
+    font-style: italic;
+    margin: 0 0 rem-calc(10);
+    line-height: 1;
+    @include breakpoint(medium) {
+        font-size: rem-calc(30);
+    }
+}
+.entry-meta {
+    font-family: $header-font;
+    font-size: rem-calc(12);
+    line-height: 110%;
+    color: $primary-color;
+    margin-bottom: rem-calc(5);
+    @extend %upper;
+    @include font-smoothing(auto);
+    @include breakpoint(medium) {
+        font-size: rem-calc(14);
+    }
+    a {
+        color: $primary-color;
+    }
+}
+.widget {
+    margin-bottom: rem-calc(30);
+}
+.widget-title {
+    font-size: rem-calc(20);
+}
+.readmore {
+    font-weight: bold;
+}
+.widget-area {
+    .widget-title {
+        font-weight: normal;
+        font-size: rem-calc(18);
+        border-bottom: 1px solid $primary-color;
+        margin: 0 0 rem-calc(15);
+        padding: 0 0 rem-calc(10);
+        @extend %upper;
+    }
+    .search-submit {
+        height: rem-calc(39);
+        margin: 0;
+    }
+    .search-field {
+        margin: 0;
+        @include border-radius(0);
+    }
+    .widget ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+.comment-list {
+    list-style: none;
+    margin: 0;
+}
+.comment-meta {
+    overflow: hidden;
+    margin-bottom: rem-calc(10);
+}
+.comment-author {
+    float: left;
+    .avatar {
+        margin-right: rem-calc(10);
+        border-radius: 50%;
+    }
+}
+.comment-metadata {
+    font-size: rem-calc(12);
+    float: right;
+    margin-top: rem-calc(10);
+}
+.comments-title, .comment-reply-title {
+    font-size: rem-calc(18);
+    border-bottom: 1px solid;
+    margin-bottom: rem-calc(30);
+    font-weight: $light;
+    @include breakpoint(medium) {
+       font-size: rem-calc(20);
+       padding-bottom: rem-calc(5);
+    }
+}
+input[type="submit"], .nav-links a, .comment-reply-link, .tribe-events-sub-nav a {
+   @include button(false, $primary-color, darken($primary-color, 20), $white, 'solid');
+}
+.nav-links a, .tribe-events-sub-nav a {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @include breakpoint(large) {
+        max-width: rem-calc(320);
+    }
+}
+.more-link {
+    display: block;
+}
+.entry-footer span {
+    margin-right: rem-calc(10);
+    padding-right: rem-calc(10);
+    font-size: rem-calc(14);
+    border-right: 1px solid $light-gray;
+}

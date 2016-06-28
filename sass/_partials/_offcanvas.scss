@@ -1,0 +1,47 @@
+.off-canvas-wrapper {
+    background: $light-gray;
+}
+.off-canvas-content {
+	background-color: $white;
+}
+.off-canvas {
+	.site-title {
+		padding: 0;
+		a {
+			border: none;
+		}
+		img {
+	    	max-width: rem-calc(160);
+	    	-webkit-backface-visibility: initial;
+	    	padding: 0;
+	    	margin: 0;
+		}
+	}
+	.site-title-link {
+		outline: none;
+	    padding: rem-calc(16);
+	    display: block;
+	    text-align: center;
+	    max-height: none;
+	}
+	.button {
+		margin: 0;
+	}
+}
+.tab-bar {
+	.site-title { 
+		img {
+			max-height: rem-calc(30);
+    		width: auto;
+    		padding: 0 rem-calc(5);
+		}
+	}
+}
+.contain-to-grid {
+	.tab-bar {
+	    max-width: $grid-row-width;
+	}
+}
+.title-bar-icon {
+    max-height: rem-calc(32);
+}

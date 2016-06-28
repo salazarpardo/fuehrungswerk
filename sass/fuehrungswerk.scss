@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+@import '_partials/fonts';
+@import '_partials/settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-everything;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
+@import '_partials/base';
+@import '_partials/layout';
+@import '_partials/header';
+@import '_partials/offcanvas';
+@import 'slick';
+@import 'slick-theme';
+@import '_partials/homeslider';
+@import '_partials/home';
+@import '_partials/testimonials';
+@import '_partials/single';
+@import '_partials/footer';
