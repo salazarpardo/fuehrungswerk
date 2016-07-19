@@ -21,7 +21,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			<div class="row small-up-1 medium-up-3">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -31,17 +31,20 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
+				echo '<div class="column">';
 				get_template_part( 'template-parts/content', get_post_type() );
-
+				echo '</div>';
 			endwhile;
 
 			the_posts_navigation();
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			get_template_part( 'template-parts/content', 'none' ); ?>
 
-		endif; ?>
+		</div>
+
+		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

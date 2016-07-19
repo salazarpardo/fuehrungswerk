@@ -31,6 +31,18 @@
 			}
 		}
 	}
+	&.post-type-archive-press { 
+		.site-content {
+			.content-area {
+				@include breakpoint(medium) {
+					@include grid-column(12);
+				}
+				.row {
+					@include grid-row-nest;
+				}
+			}
+		}
+	}
 	.site-content {
 		.content-area {
 			@include breakpoint(medium) {
