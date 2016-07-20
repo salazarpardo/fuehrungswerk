@@ -16,4 +16,5 @@ get_header(); ?>
 
 <?php get_sidebar('intro'); ?>
 <?php get_sidebar('services'); ?>
+<?php get_template_part( 'template-parts/testimonials' ); ?>
 <?php get_footer(); ?>

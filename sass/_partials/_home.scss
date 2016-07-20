@@ -132,7 +132,6 @@
 			}
 	}
 }
-$slick-loader-path: "./img";
 .products {
 	padding: map-get($grid-column-gutter, medium)*2 0; 
 	@include grid-column-row;

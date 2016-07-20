@@ -11,14 +11,17 @@
 
 ?>
 				</div><!-- #content -->
-				<?php wp_reset_query();
+				<!-- <?php wp_reset_query();
 
 				global $post;
-				$template = get_post_meta($post->ID,'_wp_page_template',true);
-				 if ((is_page() || is_single() || is_home()) && $template != 'default') : ?>
-					<?php // get_template_part( 'template-parts/testimonials' ); ?>
-					<?php get_sidebar('circles'); ?>
+				$template = get_post_meta($post->ID,'_wp_page_template',true); 
+				?>
+				<?php if ((is_page() || is_single()) && $template = 'fw-page.php') :?>
+					 	
 				<?php endif;?>
+				<?php if ((is_page() || is_single()) && $template != 'fw-page.php') : ?>
+					<?php get_sidebar('circles'); ?>
+				<?php endif;?> -->
 				<?php if (is_front_page() && !is_home()) : get_template_part( 'template-parts/products' ); endif; ?>
 				<?php get_template_part( 'template-parts/customers' ); ?>
 				<?php get_sidebar('home-footer'); ?>
@@ -115,8 +118,8 @@
 									Tel: 040 / 32 901 247<br>
 									Fax: 040 / 32 901 100<br>
 									<br>
-									<strong>mail@felicitassaurenbach.de<br>
-									www.felicitassaurenbach.de</strong>
+									<strong><a href="mailto:mail@felicitassaurenbach.de">mail@felicitassaurenbach.de</a><br>
+									<a href="http://www.felicitassaurenbach.de">www.felicitassaurenbach.de</a></strong>
 								</p>
 							</div>
 						</div><!-- .site-info -->

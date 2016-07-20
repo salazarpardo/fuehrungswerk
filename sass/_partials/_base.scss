@@ -34,6 +34,8 @@ $light: 300;
 $normal: 400;
 $bold:  700;
 
+$slick-loader-path: "./img";
+
 @mixin font-smoothing($value: antialiased) {
   -webkit-font-smoothing: $value;
 }
