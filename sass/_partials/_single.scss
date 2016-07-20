@@ -106,6 +106,9 @@
 		    font-size: rem-calc(17);
 		}
 	} 
+	.row {
+		@include grid-row-nest();
+		}
 	.page-title {
 		font-size: rem-calc(20);
 		border-bottom: 1px solid;
