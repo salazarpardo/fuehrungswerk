@@ -103,7 +103,8 @@
    }
    .entry-content {
 	   	@include breakpoint(medium) {
-		    font-size: rem-calc(17);
+		    /* font-size: rem-calc(17); gave weird issues with "r" in the font */
+			font-size: 1.17rem;
 		}
 	} 
 	.row {
@@ -155,7 +156,8 @@
 		}
 		p {
 			@include breakpoint(large) {
-		    	font-size: rem-calc(17);
+		    /* font-size: rem-calc(17); gave weird issues with "r" in the font */
+			font-size: 1.17rem;
 			}
 		}
 		.accordion p {
@@ -163,7 +165,8 @@
 		}
 		h1, h2, h3, h4, h5, h6 {
 			overflow: hidden;
-			line-height: 1.1;
+			/*font-weight: $bold;*/
+			/*line-height: 1.1;*/
 		}
 		h4 {
 		    position: relative;
@@ -238,7 +241,7 @@
 			    margin-bottom: 10px;
 			}
 			a {
-				color: transparent;
+				color: map-get($foundation-palette, primary);
 		    	@include transition(.6s ease-in-out color, ease-in-out 0.3s transform);
 		    }
 				
@@ -406,7 +409,7 @@
 	font-size: rem-calc(16);
 	border: none;
 	h1, h2, h3, h4, h5, h6 {
-	    font-weight: normal;
+	    font-weight: 700;
 	    font-size: rem-calc(16);
 	    color: map-get($foundation-palette, primary);
 	}
