@@ -3982,33 +3982,26 @@ input[type="submit"]:hover, input[type="submit"]:focus, .nav-links a:hover, .nav
 .footer .footer-right p { line-height: 1.35; }
 
 /* line 1, sass/_partials/_cf7.scss */
-div.wpcf7 { background-color: #ebebeb; padding: 1.875rem; }
-/* line 6, sass/_partials/_cf7.scss */
-div.wpcf7 .rtp-form-field { clear: both; margin-bottom: 15px; overflow: hidden; }
-/* line 13, sass/_partials/_cf7.scss */
-div.wpcf7 label { font-weight: bold; float: left; margin-bottom: 4px; width: 100%; }
-/* line 15, sass/_partials/_cf7.scss */
-div.wpcf7 .wpcf7-form-control-wrap { float: left; display: block; margin-bottom: 0; width: 100%; }
-/* line 18, sass/_partials/_cf7.scss */
-div.wpcf7 input { font-size: 1em; float: left; height: 35px; padding: 0 5px; width: 100%; }
-/* line 19, sass/_partials/_cf7.scss */
-div.wpcf7 textarea { height: 100px; padding: 5px; width: 100%; }
-/* line 20, sass/_partials/_cf7.scss */
-div.wpcf7 .wpcf7-submit { height: 35px; width: 100%; }
+.entry-content div.wpcf7 { background-color: #ebebeb; padding-top: 3.125rem; padding-right: 5rem; padding-left: 5rem; padding-bottom: 1.25rem; border-top: 1px solid #b2b2b2; margin-top: 1.25rem; margin-bottom: 1.25rem; /* Style form elements */ /* FF 4-18 */ /* FF 19+ */ /* IE 10+ */ }
+/* line 17, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:not(.wpcf7-submit) { margin-top: 0.3125rem; margin-bottom: 0.3125rem; }
 /* line 23, sass/_partials/_cf7.scss */
-div.wpcf7 .wpcf7-validation-errors { background-color: #f2dede; border-color: #eed3d7; color: #b94a48; clear: both; margin: 15px 0 0; overflow: hidden; padding: 8px 10px; }
-/* line 24, sass/_partials/_cf7.scss */
-div.wpcf7 .wpcf7-mail-sent-ok { background-color: #dff0d8; border-color: #d6e9c6; color: #468847; clear: both; margin: 15px 0 0; overflow: hidden; padding: 10px; }
-/* line 25, sass/_partials/_cf7.scss */
-div.wpcf7 .wpcf7-not-valid-tip { border: 0; color: #b94a48; font-size: 1em; left: 5px; padding: 0 2px; position: absolute; top: 7px; width: 80%; z-index: 100; }
-/* line 26, sass/_partials/_cf7.scss */
-div.wpcf7 span.required { color: #b94a48; }
-
-/* line 31, sass/_partials/_cf7.scss */
-#content .wpcf7 .btn-container { text-align: center; margin-bottom: 0; overflow: visible; position: relative; }
-
-/* line 33, sass/_partials/_cf7.scss */
-#content img.ajax-loader { bottom: -25px; left: 49%; margin: 10px 0 0; position: absolute; }
-
+.entry-content div.wpcf7 .wpcf7-not-valid-tip { font-size: 1rem; font-weight: normal; }
+/* line 27, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-not-valid { border: 1px solid red; }
+/* line 30, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-response-output { font-size: 1rem; border: none; font-weight: 700; color: white; }
 /* line 36, sass/_partials/_cf7.scss */
-.ie8 .wpcf7 input { line-height: 35px; }
+.entry-content div.wpcf7 .wpcf7-response-output.wpcf7-validation-errors { background-color: red; }
+/* line 39, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-response-output.wpcf7-mail-sent-ok { background-color: green; }
+/* line 44, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus::-webkit-input-placeholder, .entry-content div.wpcf7 textarea:focus::-webkit-textarea-placeholder { color: transparent; }
+/* line 45, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus:-moz-placeholder, .entry-content div.wpcf7 textarea:focus:-moz-placeholder { color: transparent; }
+/* line 46, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus::-moz-placeholder, .entry-content div.wpcf7 textarea:focus::-moz-placeholder { color: transparent; }
+/* line 47, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus:-ms-input-placeholder, .entry-content div.wpcf7 textarea:focus:-ms-textarea-placeholder { color: transparent; }
+/* line 50, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 select { margin-top: 0.3125rem; margin-bottom: 0.3125rem; width: 30%; color: #0a0a0a; }
