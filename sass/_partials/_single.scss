@@ -356,13 +356,24 @@
     font-size: rem-calc(14);
     color: $white;
     .ecs-event {
-	    margin-bottom: rem-calc(40);
+	    margin-top: rem-calc(20);
+		margin-bottom: rem-calc(30);
 	}
     .entry-title {
     	font-size: rem-calc(16);
+		margin-top: rem-calc(5);
+		margin-bottom: rem-calc(5);
+		padding:0;
+		line-height:1.5;
     	a {
 		    color: white;
 		}
+	}
+	.time, .venue {
+    	text-transform:uppercase;
+	}
+	p {
+    	font-size:0.85rem !important;
 	}
 	&+ .ecs-all-events {
 		background: map-get($foundation-palette, primary);
@@ -370,6 +381,7 @@
 	    font-size: rem-calc(14);
 	    display: block;
 	    margin: rem-calc(-30) 0 0;
+		font-style: italic;
 	    a {
 	    	color: $white;
 	    }
