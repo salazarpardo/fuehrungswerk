@@ -252,11 +252,11 @@ function fuehrungswerk_excerpts_to_pages() {
 add_filter( 'get_the_archive_title', function ( $title ) {
 
 	if ( is_post_type_archive() ) {
-		$title = post_type_archive_title('<h1 class="page-title">', '</h1>');
+		$title = post_type_archive_title('<h1 class="entry-title">', '</h1>');
 	}
 
 	elseif ( is_archive() ) {
-		$title = the_archive_title('<h1 class="page-title">', '</h1>'); 
+		$title = the_archive_title('<h1 class="entry-title">', '</h1>'); 
 	}
 
 	return $title;

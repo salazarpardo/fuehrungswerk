@@ -32,15 +32,16 @@
         font-weight: $bold;
     }
     .entry-meta {
-        font-size: rem-calc(10);
+        font-size: rem-calc(12);
     }
     .entry-excerpt {
-        font-size: rem-calc(12);
+        font-size: rem-calc(14);
         margin-bottom: rem-calc(10);
     }
     .read-more {
         font-style: italic;
         margin-bottom: rem-calc(10);
+		font-size: rem-calc(14);
     }
     .wpcf7-radio {
         @include grid-row;

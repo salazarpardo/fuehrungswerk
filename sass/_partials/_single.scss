@@ -3,6 +3,7 @@
 	img {
 		width: 100%;
 	}
+	
 	.header-caption { 
 		@include grid-row;
 		position: absolute;
@@ -10,6 +11,10 @@
 		right: 0;
 	    top: 50%;
 	    @include transform(translateY(-50%)); 
+		/** customer wants to see without - a test **/
+		display:none;
+		visibility:hidden;
+		/** end test **/
 	}
 	.circle {
 		@include grid-column(4);
@@ -424,7 +429,26 @@
 	    font-weight: 700;
 	    font-size: rem-calc(16);
 	    color: map-get($foundation-palette, primary);
+		}
+	&.hingucker {
+		margin-bottom:rem-calc(80);				
+			li > a {
+					padding-left: 20px;
+			}
+			li > a::after {
+				width: 0;
+				background-image:none;
+			}
+			li .content {
+				border-bottom: 1px solid #ebebeb;
+				border-left: 1px solid #ebebeb;
+				border-right: 1px solid #ebebeb;
+				background-color: #3bbeef;
+				background: #ffffff;
+				color: #6a6a6a;
+			}			
 	}
+
 	p {
 		font-size: rem-calc(16);
 	}
@@ -461,7 +485,7 @@
 		}
 		.content {
 			@include accordion-content;
-			background: map-get($foundation-palette, primary);;
+			background: map-get($foundation-palette, primary);
 	    	color: $white;
 		}
 		&.is-active {
@@ -479,15 +503,13 @@
 	.entry-content {
 		margin: 0;
 	}
-	.content-area .entry-title {
-		@include breakpoint(large) {
-	    	font-size: rem-calc(32);
-		}
-	}
 	&.post-type-archive-testimonial {
 		.meta {
 		    font-size: rem-calc(14);
 		    margin: 0 0 rem-calc(10);
+		}		
+		h3.entry-title  {
+		    font-size: rem-calc(25);
 		}
 		.hentry {
 			text-align: center;
@@ -497,11 +519,26 @@
 		}
 		.author {
 			font-weight: $bold;	
+			color: map-get($foundation-palette, primary);
+			margin:0;
+			padding:0;
 		}
 		blockquote {
 			border: none;
     		font-style: italic;
     		font-size: rem-calc(18);
+		}
+	}
+	&.post-type-archive-press .site-content  {
+		h1.entry-title {
+		    margin-bottom:rem-calc(45);
+		}
+		h3.entry-title  {
+		    font-size: rem-calc(25);
+		}
+		.entry-content {
+			font-size: rem-calc(16);
+			margin-top: rem-calc(15);
 		}
 	}
 }
