@@ -47,6 +47,7 @@ function fuehrungswerk_setup() {
 		'primary' => esc_html__( 'Primary', 'fuehrungswerk' ),
 		'top' => esc_html__( 'Top', 'fuehrungswerk' ),
 		'footer' => esc_html__( 'Footer', 'fuehrungswerk' ),
+		'team' => esc_html__( 'Sidebar', 'fuehrungswerk' ),
 	) );
 
 	/*

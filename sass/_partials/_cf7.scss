@@ -1,11 +1,11 @@
-.entry-content div.wpcf7 
+.entry-content div.wpcf7 fieldset 
   {
-	background-color: #ebebeb;
-	padding-top: rem-calc(50);
-	padding-right: rem-calc(80);
-	padding-left: rem-calc(80);
+	background-color: #f2f2f2;
+	padding-top: rem-calc(20);
+	padding-right: rem-calc(40);
+	padding-left: rem-calc(40);
 	padding-bottom: rem-calc(20);
-	border-top: 1px solid #b2b2b2;
+	border-top: 2px solid map-get($foundation-palette, primary);
 	margin-top: rem-calc(20);
 	margin-bottom: rem-calc(20);
 	
@@ -13,12 +13,29 @@
 	
 	/* Style form elements */
 
+	legend {
+		font-size:1.5rem;
+		margin-top: rem-calc(5);
+		padding-left:rem-calc(10);
+		padding-right:rem-calc(10);		
+		color:map-get($foundation-palette, primary);
+		}
 	input {
 		&:not(.wpcf7-submit) {
 			margin-top: rem-calc(5);
 			margin-bottom: rem-calc(5);			
 			}
 		}
+	span.wpcf7-list-item {
+		margin-top: rem-calc(5);
+		margin-bottom: rem-calc(5);	
+		margin-left: 0;		
+		display:block;		
+		.wpcf7-list-item-label {
+			margin-left: rem-calc(10);	
+			}
+		}
+	
 		
 	.wpcf7-not-valid-tip {
 		font-size:1rem;
@@ -40,12 +57,7 @@
 		background-color: green;
 		}
 		
-		
-	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-textarea-placeholder { color:transparent; }
-	input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-	input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-	input:focus:-ms-input-placeholder, textarea:focus:-ms-textarea-placeholder  { color:transparent; } /* IE 10+ */
-	
+
 	
 	select {
 			margin-top: rem-calc(5);
