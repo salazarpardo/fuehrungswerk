@@ -4029,3 +4029,28 @@ input[type="submit"]:hover, input[type="submit"]:focus, .nav-links a:hover, .nav
 .entry-content div.wpcf7 fieldset .wpcf7-response-output.wpcf7-mail-sent-ok { background-color: green; }
 /* line 62, sass/_partials/_cf7.scss */
 .entry-content div.wpcf7 fieldset select { margin-top: 0.3125rem; margin-bottom: 0.3125rem; width: 30%; color: #0a0a0a; }
+
+/* line 70, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 { background-color: #ebebeb; padding-top: 3.125rem; padding-right: 5rem; padding-left: 5rem; padding-bottom: 1.25rem; border-top: 1px solid #b2b2b2; margin-top: 1.25rem; margin-bottom: 1.25rem; /* Style form elements */ /* FF 4-18 */ /* FF 19+ */ /* IE 10+ */ }
+/* line 86, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:not(.wpcf7-submit) { margin-top: 0.3125rem; margin-bottom: 0.3125rem; }
+/* line 92, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-not-valid-tip { font-size: 1rem; font-weight: normal; }
+/* line 96, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-not-valid { border: 1px solid red; }
+/* line 99, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-response-output { font-size: 1rem; border: none; font-weight: 700; color: white; }
+/* line 105, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-response-output.wpcf7-validation-errors { background-color: red; }
+/* line 108, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 .wpcf7-response-output.wpcf7-mail-sent-ok { background-color: green; }
+/* line 113, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus::-webkit-input-placeholder, .entry-content div.wpcf7 textarea:focus::-webkit-textarea-placeholder { color: transparent; }
+/* line 114, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus:-moz-placeholder, .entry-content div.wpcf7 textarea:focus:-moz-placeholder { color: transparent; }
+/* line 115, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus::-moz-placeholder, .entry-content div.wpcf7 textarea:focus::-moz-placeholder { color: transparent; }
+/* line 116, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 input:focus:-ms-input-placeholder, .entry-content div.wpcf7 textarea:focus:-ms-textarea-placeholder { color: transparent; }
+/* line 119, sass/_partials/_cf7.scss */
+.entry-content div.wpcf7 select { margin-top: 0.3125rem; margin-bottom: 0.3125rem; width: 30%; color: #0a0a0a; }
