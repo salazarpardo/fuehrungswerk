@@ -133,6 +133,15 @@
 		   padding-bottom: rem-calc(5);
 		}
 	}
+	.menu-team-container .menu#menu-team > li {
+    	display:block;
+	}
+	.menu-team-container .menu#menu-team > li {
+		display: block;
+		vertical-align: middle;
+		color:red;
+	}
+
 }
 .page .entry-content, #tribe-events .tribe-events-content {
 	> p {
@@ -170,7 +179,7 @@
 		p {
 			@include breakpoint(large) {
 		    /* font-size: rem-calc(17); gave weird issues with "r" in the font */
-			font-size: 1.17rem;
+			font-size: 1rem;
 			}
 		}
 		.accordion p {
