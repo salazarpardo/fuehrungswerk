@@ -1,0 +1,67 @@
+.entry-content div.wpcf7 fieldset   {
+	background-color: #f2f2f2;
+	padding-top: rem-calc(20);
+	padding-right: rem-calc(40);
+	padding-left: rem-calc(40);
+	padding-bottom: rem-calc(20);
+	border-top: 2px solid map-get($foundation-palette, primary);
+	margin-top: rem-calc(20);
+	margin-bottom: rem-calc(20);
+	
+   
+	
+	/* Style form elements */
+
+	legend {
+		font-size:1.5rem;
+		margin-top: rem-calc(5);
+		padding-left:rem-calc(10);
+		padding-right:rem-calc(10);		
+		color:map-get($foundation-palette, primary);
+		}
+	input {
+		&:not(.wpcf7-submit) {
+			margin-top: rem-calc(5);
+			margin-bottom: rem-calc(5);			
+			}
+		}
+	span.wpcf7-list-item {
+		margin-top: rem-calc(5);
+		margin-bottom: rem-calc(5);	
+		margin-left: 0;		
+		display:block;		
+		.wpcf7-list-item-label {
+			margin-left: rem-calc(10);	
+			}
+		}
+	
+		
+	.wpcf7-not-valid-tip {
+		font-size:1rem;
+		font-weight:normal;
+		}
+	.wpcf7-not-valid {
+		border:1px solid red;
+		}
+	.wpcf7-response-output {
+		font-size:1rem;
+		border:none;
+		font-weight:$bold;
+		color:white;
+		}
+	.wpcf7-response-output.wpcf7-validation-errors {
+		background-color: red;
+		}
+	.wpcf7-response-output.wpcf7-mail-sent-ok {
+		background-color: green;
+		}
+		
+
+	
+	select {
+			margin-top: rem-calc(5);
+			margin-bottom: rem-calc(5);
+			width:30%;
+			color: #0a0a0a;
+			}
+		}

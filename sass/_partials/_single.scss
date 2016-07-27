@@ -3,6 +3,7 @@
 	img {
 		width: 100%;
 	}
+	
 	.header-caption { 
 		@include grid-row;
 		position: absolute;
@@ -10,6 +11,10 @@
 		right: 0;
 	    top: 50%;
 	    @include transform(translateY(-50%)); 
+		/** customer wants to see without - a test **/
+		display:none;
+		visibility:hidden;
+		/** end test **/
 	}
 	.circle {
 		@include grid-column(4);
@@ -103,7 +108,16 @@
    }
    .entry-content {
 	   	@include breakpoint(medium) {
-		    font-size: rem-calc(17);
+		    /* font-size: rem-calc(17); gave weird issues with "r" in the font */
+			font-size: 1.17rem;
+		}
+	img.circular {
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		border:2px solid map-get($foundation-palette, primary);
 		}
 	} 
 	.row {
@@ -119,6 +133,15 @@
 		   padding-bottom: rem-calc(5);
 		}
 	}
+	.menu-team-container .menu#menu-team > li {
+    	display:block;
+	}
+	.menu-team-container .menu#menu-team > li {
+		display: block;
+		vertical-align: middle;
+		color:red;
+	}
+
 }
 .page .entry-content, #tribe-events .tribe-events-content {
 	> p {
@@ -155,7 +178,8 @@
 		}
 		p {
 			@include breakpoint(large) {
-		    	font-size: rem-calc(17);
+		    /* font-size: rem-calc(17); gave weird issues with "r" in the font */
+			font-size: 1rem;
 			}
 		}
 		.accordion p {
@@ -163,14 +187,15 @@
 		}
 		h1, h2, h3, h4, h5, h6 {
 			overflow: hidden;
-			font-weight: $bold;
-			line-height: 1.1;
+			/*font-weight: $bold;*/
+			/*line-height: 1.1;*/
 		}
 		h4 {
 		    position: relative;
 		    &:not(.panel){
 			    a {
 				    // position: absolute;
+					font-weight:$bold;
 				    // top: 50%;
 				    // transform: translateY(-50%);
 				}
@@ -239,7 +264,7 @@
 			    margin-bottom: 10px;
 			}
 			a {
-				color: transparent;
+				color: map-get($foundation-palette, primary);
 		    	@include transition(.6s ease-in-out color, ease-in-out 0.3s transform);
 		    }
 				
@@ -354,13 +379,24 @@
     font-size: rem-calc(14);
     color: $white;
     .ecs-event {
-	    margin-bottom: rem-calc(40);
+	    margin-top: rem-calc(20);
+		margin-bottom: rem-calc(30);
 	}
     .entry-title {
     	font-size: rem-calc(16);
+		margin-top: rem-calc(5);
+		margin-bottom: rem-calc(5);
+		padding:0;
+		line-height:1.5;
     	a {
 		    color: white;
 		}
+	}
+	.time, .venue {
+    	text-transform:uppercase;
+	}
+	p {
+    	font-size:0.85rem !important;
 	}
 	&+ .ecs-all-events {
 		background: map-get($foundation-palette, primary);
@@ -368,6 +404,7 @@
 	    font-size: rem-calc(14);
 	    display: block;
 	    margin: rem-calc(-30) 0 0;
+		font-style: italic;
 	    a {
 	    	color: $white;
 	    }
@@ -407,10 +444,29 @@
 	font-size: rem-calc(16);
 	border: none;
 	h1, h2, h3, h4, h5, h6 {
-	    font-weight: normal;
+	    font-weight: 700;
 	    font-size: rem-calc(16);
 	    color: map-get($foundation-palette, primary);
+		}
+	&.hingucker {
+		margin-bottom:rem-calc(80);				
+			li > a {
+					padding-left: 20px;
+			}
+			li > a::after {
+				width: 0;
+				background-image:none;
+			}
+			li .content {
+				border-bottom: 1px solid #ebebeb;
+				border-left: 1px solid #ebebeb;
+				border-right: 1px solid #ebebeb;
+				background-color: #3bbeef;
+				background: #ffffff;
+				color: #6a6a6a;
+			}			
 	}
+
 	p {
 		font-size: rem-calc(16);
 	}
@@ -447,7 +503,7 @@
 		}
 		.content {
 			@include accordion-content;
-			background: map-get($foundation-palette, primary);;
+			background: map-get($foundation-palette, primary);
 	    	color: $white;
 		}
 		&.is-active {
@@ -465,15 +521,13 @@
 	.entry-content {
 		margin: 0;
 	}
-	.content-area .entry-title {
-		@include breakpoint(large) {
-	    	font-size: rem-calc(32);
-		}
-	}
-	&.post-type-archive-testimonial {
+	&.post-type-archive-testimonial .site-content {
 		.meta {
 		    font-size: rem-calc(14);
 		    margin: 0 0 rem-calc(10);
+		}		
+		h3.entry-title  {
+		    font-size: rem-calc(25);
 		}
 		.hentry {
 			text-align: center;
@@ -483,11 +537,26 @@
 		}
 		.author {
 			font-weight: $bold;	
+			color: map-get($foundation-palette, primary);
+			margin:0;
+			padding:0;
 		}
 		blockquote {
 			border: none;
     		font-style: italic;
     		font-size: rem-calc(18);
+		}
+	}
+	&.post-type-archive-press .site-content  {
+		h1.entry-title {
+		    margin-bottom:rem-calc(45);
+		}
+		h3.entry-title  {
+		    font-size: rem-calc(25);
+		}
+		.entry-content {
+			font-size: rem-calc(16);
+			margin-top: rem-calc(15);
 		}
 	}
 }

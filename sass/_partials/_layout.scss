@@ -22,11 +22,23 @@
 		.site-content {
 			.content-area {
 				@include breakpoint(medium) {
-					@include grid-column(9);
+					@include grid-column(12);
 					@include grid-column-position(center);
 				}
-				.entry-title, .page-title {
+				article {
+					@include breakpoint(large){
+						margin-left:rem-calc(165);
+						margin-right:rem-calc(165);
+						}
+					}				
+				h3.entry-title, .page-title {
 					text-align: center;
+					}				
+				header {
+					h1.entry-title {
+						text-align: left;
+						margin-bottom:rem-calc(45);
+					}
 				}
 			}
 		}

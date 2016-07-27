@@ -21,7 +21,7 @@
 	  		@include grid-column(7, map-get($grid-column-gutter, medium)*2);
 			@include grid-column-position(center);
 	  	}
-		h3, h5, p {
+		h3, h5, p, a.testimoniallink {
 			color: $white;	
 		}
 	}
@@ -69,7 +69,7 @@
 		.testimonial-wrap {
 			color: map-get($foundation-palette, primary);
 		}
-		h3, h5, p, .slick-arrow {
+		h3, h5, p, .slick-arrow, a.testimoniallink {
 			color: map-get($foundation-palette, primary);
 		}
 	}

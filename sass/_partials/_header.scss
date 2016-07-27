@@ -53,7 +53,8 @@
 		    	color: $medium-gray;
 		    	font-size: rem-calc(14);
 		    	@include breakpoint(large) {
-					font-size: rem-calc(17);
+					/* font-size: rem-calc(17); gave weird issues with "r" in the font */
+					font-size: 1.17rem;
 				}
 		    	@include transition(.3s ease-in-out);
 		    	&:hover {
@@ -87,7 +88,7 @@
 		li:not(.is-submenu-item) > a {
 		    line-height: rem-calc(42);
 		    padding: rem-calc(11) rem-calc(8);
-		    overflow: hidden;
+		    /* overflow: hidden; */
     		text-overflow: ellipsis;
     		white-space: nowrap;
     		text-align: center;

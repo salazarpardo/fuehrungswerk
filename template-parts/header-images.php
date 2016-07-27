@@ -21,10 +21,10 @@
 			    <div id="post-<?php the_ID(); ?>" class="orbit-slide">
 
 			    	<?php
-			    	$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large'  );
+			    	$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full'  );
 					$image_width = $image_data[1];
 			 		if ( has_post_thumbnail() && $image_width > 1200) : ?>
-						<?php  the_post_thumbnail('large'); ?>
+						<?php  the_post_thumbnail('full'); ?>
 					<?php elseif (get_background_image()) : ?>
 						<img class="default-header-img " src="<?php echo get_background_image(); ?>" alt="Felicitas Saurenbach" />
 					<?php else : ?>
@@ -39,7 +39,7 @@
 									<h2 class="entry-title">
 										<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 									</h2>
-									<div class="entry-content show-for-large">
+									<div class="entry-content show-for-full">
 										<?php the_excerpt(); ?>
 										<a href="<?php the_permalink(); ?>" class="read-more">
 											<?php _e('Read more', 'fuehrungswerk')?>
@@ -91,10 +91,10 @@
 		<div class="featured-img-bg text-center">
 		    <?php
 				if ( ( is_page() || is_single() ) && has_post_thumbnail() ) {
-					$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large'  );
+					$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full'  );
 					$image_width = $image_data[1];
 					if ( $image_width > 1200) {
-						the_post_thumbnail('large');?>
+						the_post_thumbnail('full');?>
 					<?php if (get_post(get_post_thumbnail_id())->post_excerpt) : ?>
 				 	<h4 class="featured-img-caption"> <?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?> </h4>
 				 	<?php endif; 
@@ -110,18 +110,18 @@
 						}
 					}
 				}
-				elseif (is_home() && get_option('page_for_posts') && get_the_post_thumbnail(get_option( 'page_for_posts' ), 'large') ) {
+				elseif (is_home() && get_option('page_for_posts') && get_the_post_thumbnail(get_option( 'page_for_posts' ), 'full') ) {
 					$page_for_posts = get_option( 'page_for_posts' );
-		        	echo get_the_post_thumbnail($page_for_posts, 'large');
+		        	echo get_the_post_thumbnail($page_for_posts, 'full');
 				}
 				elseif ((is_post_type_archive() || is_archive()) && have_posts() &&  get_post_thumbnail_id($post->ID) ) { 
 					$first = true;
 					while (have_posts()) : the_post(); 
 					if ( $first) {
 						if ($image_width > 1200) {
-							$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large'  );
+							$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full'  );
 							$image_width = $image_data[1];
-							the_post_thumbnail('large');
+							the_post_thumbnail('full');
 						}
 						else {
 							if (get_background_image()){
