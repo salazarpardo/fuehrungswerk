@@ -147,6 +147,9 @@
 	> p {
 		margin-bottom: rem-calc(30);
 	}
+	.row {
+		@include grid-row-nest(rem-calc(60))
+	}
 	.columns {
 		@include grid-column(12, rem-calc(60));
 		@include breakpoint(medium) {
@@ -411,12 +414,13 @@
 	}
 }
 
-.tribe-events-list-widget {
-    padding: rem-calc(15);
+.tribe-events-list-widget, .events.widget {
+    padding: rem-calc(25 15 15);
    	background: map-get($foundation-palette, primary);
    	color: $white;
    	font-size: rem-calc(14);
     margin: 0 0 50px;
+    overflow: hidden;
     .widget-title {
 	    margin: 0 rem-calc(-15) rem-calc(10);
 	    padding: 0 rem-calc(15) rem-calc(10);
@@ -426,6 +430,25 @@
 	    	font-size: rem-calc(21);
 		}
 	}
+	.entry-title {
+        font-size: rem-calc(16);
+        margin-bottom: rem-calc(10);
+        font-weight: $bold;
+    }
+    .entry-meta {
+        font-size: rem-calc(12);
+        color: $white;
+    }
+    .entry-excerpt {
+        font-size: rem-calc(14);
+        margin-bottom: rem-calc(30);
+        line-height: 1.4;
+    }
+    .read-more {
+        font-style: italic;
+        margin-bottom: rem-calc(10);
+		font-size: rem-calc(14);
+    }
 	li {
 	    margin: 0 0 rem-calc(10);
 	    list-style: none;
@@ -645,5 +668,15 @@
 	    		background-repeat: no-repeat;
 	    		@include background-size(cover);
 			}
+	}
+}
+.menu-team-container {
+	.menu {
+		> li {
+		    display: block;
+		    a {
+		    	padding-left: 0;
+		    }
+		}
 	}
 }
