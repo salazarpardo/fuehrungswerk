@@ -35,5 +35,5 @@ get_header(); ?>
 
 
 <?php
-get_template_part( 'template-parts/testimonials' ); 
+// get_template_part( 'template-parts/testimonials' ); 
 get_footer();

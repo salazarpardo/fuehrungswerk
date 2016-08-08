@@ -16,12 +16,12 @@
 				global $post;
 				$template = get_post_meta($post->ID,'_wp_page_template',true); 
 				?>
-				<?php if ((is_page() || is_single()) && $template = 'fw-page.php') :?>
-					 	
-				<?php endif;?>
 				<?php if ((is_page() || is_single()) && $template != 'fw-page.php') : ?>
 					<?php get_sidebar('circles'); ?>
 				<?php endif;?> -->
+                
+                <?php get_template_part( 'template-parts/testimonials' ); ?>
+                
 				<?php if (is_front_page() && !is_home()) : get_template_part( 'template-parts/products' ); endif; ?>
 				<?php get_template_part( 'template-parts/customers' ); ?>
 				<?php get_sidebar('home-footer'); ?>
