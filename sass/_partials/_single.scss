@@ -223,12 +223,12 @@
 			margin-bottom: rem-calc(40);
 			text-align: center;
 		h1, h2, h3, h4, h5, h6 {
-		    font-size: rem-calc(18);
+		    font-size: rem-calc(20);
 		    position: absolute;
 		    z-index: 2;
 		    bottom: 60%;
-		    left: rem-calc(30);
-		    right: rem-calc(30);
+		    left: rem-calc(40);
+		    right: rem-calc(40);
 		    line-height: 100%;
 		    text-transform: uppercase;
 			letter-spacing: -1px;
@@ -237,10 +237,13 @@
 		    overflow: hidden;
     		text-overflow: ellipsis;
 		    @include breakpoint(medium) {
-		    	font-size: rem-calc(20);
+		    	font-size: rem-calc(22);
 		    }
 		    @include breakpoint(large) {
-		    	font-size: rem-calc(22);
+		    	font-size: rem-calc(24);
+		    }
+		    @include breakpoint(xlarge) {
+		    	font-size: rem-calc(26);
 		    }
 		    // @include transform(translateY(50%));
 		    @include transition(ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom);
