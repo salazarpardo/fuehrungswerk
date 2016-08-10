@@ -112,12 +112,11 @@
 			font-size: 1.17rem;
 		}
 	img.circular {
-		width: 300px;
-		height: 300px;
-		border-radius: 150px;
-		-webkit-border-radius: 150px;
-		-moz-border-radius: 150px;
-		border:2px solid map-get($foundation-palette, primary);
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
 		}
 	} 
 	.row {
@@ -162,7 +161,11 @@
 				.wpfs.panel.callout h5 {
 				    position: absolute;
 				    top: rem-calc(20);
-				    font-size: rem-calc(21);
+					text-transform:none;
+					font-size: rem-calc(20);
+					padding-bottom: 0;
+					margin-bottom: 0;
+					font-weight: $bold;								
 				}
 			}
 			&.medium-6 {
@@ -220,12 +223,12 @@
 			margin-bottom: rem-calc(40);
 			text-align: center;
 		h1, h2, h3, h4, h5, h6 {
-		    font-size: rem-calc(18);
+		    font-size: rem-calc(20);
 		    position: absolute;
 		    z-index: 2;
 		    bottom: 60%;
-		    left: rem-calc(30);
-		    right: rem-calc(30);
+		    left: rem-calc(40);
+		    right: rem-calc(40);
 		    line-height: 100%;
 		    text-transform: uppercase;
 			letter-spacing: -1px;
@@ -234,10 +237,13 @@
 		    overflow: hidden;
     		text-overflow: ellipsis;
 		    @include breakpoint(medium) {
-		    	font-size: rem-calc(20);
+		    	font-size: rem-calc(22);
 		    }
 		    @include breakpoint(large) {
-		    	font-size: rem-calc(22);
+		    	font-size: rem-calc(24);
+		    }
+		    @include breakpoint(xlarge) {
+		    	font-size: rem-calc(26);
 		    }
 		    // @include transform(translateY(50%));
 		    @include transition(ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom);
@@ -378,7 +384,7 @@
     margin: 0;
     list-style: none;
     background: map-get($foundation-palette, primary);
-    padding: rem-calc(15);
+    padding: rem-calc(40) rem-calc(15) rem-calc(15) rem-calc(15);
     font-size: rem-calc(14);
     color: $white;
     .ecs-event {
@@ -386,7 +392,7 @@
 		margin-bottom: rem-calc(30);
 	}
     .entry-title {
-    	font-size: rem-calc(16);
+		font-size: rem-calc(18);
 		margin-top: rem-calc(5);
 		margin-bottom: rem-calc(5);
 		padding:0;
@@ -397,9 +403,10 @@
 	}
 	.time, .venue {
     	text-transform:uppercase;
+		font-size: rem-calc(16);
 	}
 	p {
-    	font-size:0.85rem !important;
+    	font-size:1rem !important;
 	}
 	&+ .ecs-all-events {
 		background: map-get($foundation-palette, primary);
@@ -426,6 +433,8 @@
 	    padding: 0 rem-calc(15) rem-calc(10);
 	    color: white;
 	    font-weight: $bold;
+		text-transform:none;
+		line-height:rem-calc(22); 
 	    @include breakpoint(large) {
 	    	font-size: rem-calc(21);
 		}
@@ -436,7 +445,7 @@
         font-weight: $bold;
     }
     .entry-meta {
-        font-size: rem-calc(12);
+        font-size: rem-calc(14);
         color: $white;
     }
     .entry-excerpt {
@@ -450,7 +459,7 @@
 		font-size: rem-calc(14);
     }
 	li {
-	    margin: 0 0 rem-calc(10);
+	    margin: 0 0 rem-calc(20);
 	    list-style: none;
 	}
 	a {
@@ -462,6 +471,9 @@
 	.tribe-event-title {
 		font-size: rem-calc(16);
 	}
+}
+.google-map {
+    height: 20.5rem;
 }
 .accordion {
 	font-size: rem-calc(16);
@@ -563,6 +575,7 @@
 			color: map-get($foundation-palette, primary);
 			margin:0;
 			padding:0;
+			font-size: rem-calc(18);
 		}
 		blockquote {
 			border: none;
