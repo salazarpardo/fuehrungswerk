@@ -3638,6 +3638,7 @@ figcaption { font-size: 0.75rem; }
 /* line 213, sass/_partials/_single.scss */
 .page .entry-content .columns .circle, .page .entry-content .columns .panel:not(.callout), #tribe-events .tribe-events-content .columns .circle, #tribe-events .tribe-events-content .columns .panel:not(.callout) { -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; -moz-transition: ease-in-out 0.3s transform, ease-in-out 0.6s box-shadow; -o-transition: ease-in-out 0.3s transform, ease-in-out 0.6s box-shadow; -webkit-transition: ease-in-out 0.3s transform, ease-in-out 0.6s box-shadow; transition: ease-in-out 0.3s transform, ease-in-out 0.6s box-shadow; -moz-box-shadow: 0 0 0 2px #3bbeef inset; -webkit-box-shadow: 0 0 0 2px #3bbeef inset; box-shadow: 0 0 0 2px #3bbeef inset; background-color: transparent; padding: 100% 0 0; position: relative; background-image: url(img/services-bg.png); background-position: center bottom; background-repeat: no-repeat; margin-bottom: 2.5rem; text-align: center; }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 225, sass/_partials/_single.scss */
 .page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.125rem; position: absolute; z-index: 2; bottom: 60%; left: 1.875rem; right: 1.875rem; line-height: 100%; text-transform: uppercase; letter-spacing: -1px; color: #3bbeef; font-weight: 700; overflow: hidden; text-overflow: ellipsis; -moz-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; -o-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; -webkit-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; }
 @media screen and (min-width: 40em) { /* line 225, sass/_partials/_single.scss */
@@ -3649,11 +3650,20 @@ figcaption { font-size: 0.75rem; }
 .page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.25rem; position: absolute; z-index: 2; bottom: 60%; left: 2.5rem; right: 2.5rem; line-height: 100%; text-transform: uppercase; letter-spacing: -1px; color: #3bbeef; font-weight: 700; overflow: hidden; text-overflow: ellipsis; -moz-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; -o-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; -webkit-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; }
 @media screen and (min-width: 40em) { /* line 222, sass/_partials/_single.scss */
   .page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.375rem; } }
+=======
+/* line 222, sass/_partials/_single.scss */
+.page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.25rem; position: absolute; z-index: 2; bottom: 60%; left: 2.5rem; right: 2.5rem; line-height: 100%; text-transform: uppercase; letter-spacing: -1px; color: #3bbeef; font-weight: 700; overflow: hidden; text-overflow: ellipsis; -moz-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; -o-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; -webkit-transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; transition: ease-in-out 0.75s color, ease-in-out 0.3s transform, ease-in-out 0.3s bottom; }
+@media screen and (min-width: 40em) { /* line 222, sass/_partials/_single.scss */
+  .page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.375rem; } }
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 @media screen and (min-width: 64em) { /* line 222, sass/_partials/_single.scss */
   .page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.5rem; } }
 @media screen and (min-width: 75em) { /* line 222, sass/_partials/_single.scss */
   .page .entry-content .columns .circle h1, .page .entry-content .columns .circle h2, .page .entry-content .columns .circle h3, .page .entry-content .columns .circle h4, .page .entry-content .columns .circle h5, .page .entry-content .columns .circle h6, .page .entry-content .columns .panel:not(.callout) h1, .page .entry-content .columns .panel:not(.callout) h2, .page .entry-content .columns .panel:not(.callout) h3, .page .entry-content .columns .panel:not(.callout) h4, .page .entry-content .columns .panel:not(.callout) h5, .page .entry-content .columns .panel:not(.callout) h6, #tribe-events .tribe-events-content .columns .circle h1, #tribe-events .tribe-events-content .columns .circle h2, #tribe-events .tribe-events-content .columns .circle h3, #tribe-events .tribe-events-content .columns .circle h4, #tribe-events .tribe-events-content .columns .circle h5, #tribe-events .tribe-events-content .columns .circle h6, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 { font-size: 1.625rem; } }
+<<<<<<< HEAD
 >>>>>>> 6d1eea90f59b8e4a6f13f84fa4db29a2d4958d8f
+=======
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 /* line 247, sass/_partials/_single.scss */
 .page .entry-content .columns .circle h1 a, .page .entry-content .columns .circle h2 a, .page .entry-content .columns .circle h3 a, .page .entry-content .columns .circle h4 a, .page .entry-content .columns .circle h5 a, .page .entry-content .columns .circle h6 a, .page .entry-content .columns .panel:not(.callout) h1 a, .page .entry-content .columns .panel:not(.callout) h2 a, .page .entry-content .columns .panel:not(.callout) h3 a, .page .entry-content .columns .panel:not(.callout) h4 a, .page .entry-content .columns .panel:not(.callout) h5 a, .page .entry-content .columns .panel:not(.callout) h6 a, #tribe-events .tribe-events-content .columns .circle h1 a, #tribe-events .tribe-events-content .columns .circle h2 a, #tribe-events .tribe-events-content .columns .circle h3 a, #tribe-events .tribe-events-content .columns .circle h4 a, #tribe-events .tribe-events-content .columns .circle h5 a, #tribe-events .tribe-events-content .columns .circle h6 a, #tribe-events .tribe-events-content .columns .panel:not(.callout) h1 a, #tribe-events .tribe-events-content .columns .panel:not(.callout) h2 a, #tribe-events .tribe-events-content .columns .panel:not(.callout) h3 a, #tribe-events .tribe-events-content .columns .panel:not(.callout) h4 a, #tribe-events .tribe-events-content .columns .panel:not(.callout) h5 a, #tribe-events .tribe-events-content .columns .panel:not(.callout) h6 a { -moz-transition: ease-in-out 0.6s color; -o-transition: ease-in-out 0.6s color; -webkit-transition: ease-in-out 0.6s color; transition: ease-in-out 0.6s color; }
 /* line 251, sass/_partials/_single.scss */
@@ -3769,6 +3779,7 @@ figcaption { font-size: 0.75rem; }
 
 /* line 380, sass/_partials/_single.scss */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .ecs-event-list { margin: 0; list-style: none; background: #3bbeef; padding: 2.5rem 0.9375rem 0.9375rem 0.9375rem; font-size: 0.875rem; color: #fefefe; }
 /* line 387, sass/_partials/_single.scss */
 .ecs-event-list .ecs-event { margin-top: 1.25rem; margin-bottom: 1.875rem; }
@@ -3831,6 +3842,8 @@ figcaption { font-size: 0.75rem; }
 .accordion li { margin-bottom: 1.875rem; }
 /* line 513, sass/_partials/_single.scss */
 =======
+=======
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 .ecs-event-list { margin: 0; list-style: none; background: #3bbeef; padding: 0.9375rem; font-size: 0.875rem; color: #fefefe; }
 /* line 387, sass/_partials/_single.scss */
 .ecs-event-list .ecs-event { margin-top: 1.25rem; margin-bottom: 1.875rem; }
@@ -3889,13 +3902,17 @@ figcaption { font-size: 0.75rem; }
 /* line 505, sass/_partials/_single.scss */
 .accordion li { margin-bottom: 1.875rem; }
 /* line 507, sass/_partials/_single.scss */
+<<<<<<< HEAD
 >>>>>>> 6d1eea90f59b8e4a6f13f84fa4db29a2d4958d8f
+=======
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 .accordion li > a { display: block; padding: 1.25rem 1rem; line-height: 1; font-size: 0.75rem; color: #fefefe; position: relative; border-bottom: 1px solid #ebebeb; font-size: 1rem; padding-left: 60px; background-color: #3bbeef; font-weight: 700; }
 /* line 65, node_modules/foundation-sites/scss/components/_accordion.scss */
 .accordion li > a:hover, .accordion li > a:focus { background-color: #13abe4; }
 /* line 71, node_modules/foundation-sites/scss/components/_accordion.scss */
 .accordion li > a::before { content: '+'; position: absolute; right: 1rem; top: 50%; margin-top: -0.5rem; }
 /* line 79, node_modules/foundation-sites/scss/components/_accordion.scss */
+<<<<<<< HEAD
 <<<<<<< HEAD
 .is-active > .accordion li > a::before { content: 'ÔÇô'; }
 /* line 519, sass/_partials/_single.scss */
@@ -3942,6 +3959,22 @@ figcaption { font-size: 0.75rem; }
 .archive .entry-content { margin: 0; }
 /* line 551, sass/_partials/_single.scss */
 .archive.post-type-archive-testimonial .site-content .meta { font-size: 0.875rem; margin: 0 0 0.625rem; }
+=======
+.is-active > .accordion li > a::before { content: '–'; }
+/* line 513, sass/_partials/_single.scss */
+.accordion li > a:focus { background-color: #3bbeef; }
+/* line 516, sass/_partials/_single.scss */
+.accordion li > a:after { content: " "; position: absolute; top: 50%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 15px; height: 30px; width: 30px; background-image: url(img/icon-white.png); background-size: contain; border-radius: 50%; }
+/* line 530, sass/_partials/_single.scss */
+.accordion li .content { padding: 1rem; display: none; border-bottom: 1px solid #ebebeb; background-color: #3bbeef; background: #3bbeef; color: #fefefe; }
+/* line 537, sass/_partials/_single.scss */
+.accordion li.is-active > a:before { content: "-"; }
+
+/* line 547, sass/_partials/_single.scss */
+.archive .entry-content { margin: 0; }
+/* line 551, sass/_partials/_single.scss */
+.archive.post-type-archive-testimonial .site-content .meta { font-size: 0.875rem; margin: 0 0 0.625rem; }
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 /* line 555, sass/_partials/_single.scss */
 .archive.post-type-archive-testimonial .site-content h3.entry-title { font-size: 1.5625rem; }
 /* line 558, sass/_partials/_single.scss */
@@ -3958,17 +3991,24 @@ figcaption { font-size: 0.75rem; }
 .archive.post-type-archive-press .site-content .entry-content { font-size: 1rem; margin-top: 0.9375rem; }
 
 /* line 589, sass/_partials/_single.scss */
+<<<<<<< HEAD
 >>>>>>> 6d1eea90f59b8e4a6f13f84fa4db29a2d4958d8f
+=======
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 .circles-widget-area { max-width: 75rem; margin-left: auto; margin-right: auto; width: 100%; float: left; padding-left: 0.625rem; padding-right: 0.625rem; clear: both; }
 /* line 138, node_modules/foundation-sites/scss/util/_mixins.scss */
 .circles-widget-area::before, .circles-widget-area::after { content: ' '; display: table; flex-basis: 0; order: 1; }
 /* line 146, node_modules/foundation-sites/scss/util/_mixins.scss */
 .circles-widget-area::after { clear: both; }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (min-width: 40em) { /* line 596, sass/_partials/_single.scss */
 =======
 @media screen and (min-width: 40em) { /* line 589, sass/_partials/_single.scss */
 >>>>>>> 6d1eea90f59b8e4a6f13f84fa4db29a2d4958d8f
+=======
+@media screen and (min-width: 40em) { /* line 589, sass/_partials/_single.scss */
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
   .circles-widget-area { padding-left: 0.9375rem; padding-right: 0.9375rem; } }
 /* line 82, node_modules/foundation-sites/scss/grid/_column.scss */
 .circles-widget-area:last-child:not(:first-child) { float: right; }
@@ -3978,6 +4018,7 @@ figcaption { font-size: 0.75rem; }
 .circles-widget-area::before, .circles-widget-area::after { content: ' '; display: table; flex-basis: 0; order: 1; }
 /* line 146, node_modules/foundation-sites/scss/util/_mixins.scss */
 .circles-widget-area::after { clear: both; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 600, sass/_partials/_single.scss */
 .circles-widget-area .widget { width: 83.33333%; float: left; padding-left: 1.875rem; padding-right: 1.875rem; float: none; margin-left: auto; margin-right: auto; }
@@ -4038,6 +4079,24 @@ figcaption { font-size: 0.75rem; }
   .circles-widget-area .widget { width: 33.33333%; float: left; padding-left: 1.875rem; padding-right: 1.875rem; }
   /* line 82, node_modules/foundation-sites/scss/grid/_column.scss */
   .circles-widget-area .widget:last-child:not(:first-child) { float: right; } }
+=======
+/* line 593, sass/_partials/_single.scss */
+.circles-widget-area .widget { width: 83.33333%; float: left; padding-left: 1.875rem; padding-right: 1.875rem; float: none; margin-left: auto; margin-right: auto; }
+/* line 82, node_modules/foundation-sites/scss/grid/_column.scss */
+.circles-widget-area .widget:last-child:not(:first-child) { float: right; }
+/* line 596, sass/_partials/_single.scss */
+.circles-widget-area .widget:last-child:not(:first-child) { float: none; }
+@media screen and (min-width: 40em) { /* line 593, sass/_partials/_single.scss */
+  .circles-widget-area .widget { width: 50%; float: left; padding-left: 1.875rem; padding-right: 1.875rem; float: none; margin-left: auto; margin-right: auto; }
+  /* line 82, node_modules/foundation-sites/scss/grid/_column.scss */
+  .circles-widget-area .widget:last-child:not(:first-child) { float: right; }
+  /* line 602, sass/_partials/_single.scss */
+  .circles-widget-area .widget:last-child:not(:first-child) { float: none; } }
+@media screen and (min-width: 64em) { /* line 593, sass/_partials/_single.scss */
+  .circles-widget-area .widget { width: 33.33333%; float: left; padding-left: 1.875rem; padding-right: 1.875rem; }
+  /* line 82, node_modules/foundation-sites/scss/grid/_column.scss */
+  .circles-widget-area .widget:last-child:not(:first-child) { float: right; } }
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 /* line 609, sass/_partials/_single.scss */
 .circles-widget-area .widget .text-widget { -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; margin: 1.875rem 0; }
 /* line 612, sass/_partials/_single.scss */
@@ -4064,7 +4123,10 @@ figcaption { font-size: 0.75rem; }
 /* line 678, sass/_partials/_single.scss */
 .menu-team-container .menu > li { display: block; }
 /* line 680, sass/_partials/_single.scss */
+<<<<<<< HEAD
 >>>>>>> 6d1eea90f59b8e4a6f13f84fa4db29a2d4958d8f
+=======
+>>>>>>> 0ba657ae8197ee749b8dd5064900d350c326d3df
 .menu-team-container .menu > li a { padding-left: 0; }
 
 /* line 1, sass/_partials/_footer.scss */
