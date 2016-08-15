@@ -1,3 +1,5 @@
+
+                
 <?php if ( is_front_page() ) : ?>
 				
 	<?php  /* query_posts('posts_per_page=5');
@@ -86,9 +88,12 @@
 		 </nav> -->
 	<?php endif; ?>
 	</div>
+    
+
 
 	<?php elseif ( (!is_front_page() ) || (is_home() && get_option('page_for_posts')) ) : ?>
 		<div class="featured-img-bg text-center">
+        
 		    <?php
 				if ( ( is_page() || is_single() ) && has_post_thumbnail() ) {
 					$image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full'  );
@@ -109,12 +114,25 @@
 							echo '<img class="default-header-img" src="', get_bloginfo('stylesheet_directory'), '/img/default-image.jpg','" alt="Revista T" />';
 						}
 					}
-				}
+				}			
+				
+				
 				elseif (is_home() && get_option('page_for_posts') && get_the_post_thumbnail(get_option( 'page_for_posts' ), 'full') ) {
 					$page_for_posts = get_option( 'page_for_posts' );
 		        	echo get_the_post_thumbnail($page_for_posts, 'full');
 				}
-				elseif ((is_post_type_archive() || is_archive()) && have_posts() &&  get_post_thumbnail_id($post->ID) ) { 
+				
+				elseif( is_post_type_archive('press') ){
+					echo '<img class="default-header-img" src="', get_bloginfo('stylesheet_directory'), '/img/default-presse.jpg','" alt="Presse Felicitas Saurenbach" />';
+				}				
+				elseif ( is_post_type_archive( 'testimonial' ) ) {
+					echo '<img class="default-header-img" src="', get_bloginfo('stylesheet_directory'), '/img/default-referenzen.jpg','" alt="Referenzen Felicitas Saurenbach" />';
+				}
+				elseif ( is_post_type_archive( 'tribe_events' ) ) {
+					echo '<img class="default-header-img" src="', get_bloginfo('stylesheet_directory'), '/img/default-termine.jpg','" alt="Termine Felicitas Saurenbach" />';
+				} 
+				
+				/*elseif ((is_post_type_archive() || is_archive()) && have_posts() &&  get_post_thumbnail_id($post->ID) ) { 
 					$first = true;
 					while (have_posts()) : the_post(); 
 					if ( $first) {
@@ -130,14 +148,16 @@
 							<?php
 							}
 							else {
-								echo '<img class="default-header-img" src="', get_bloginfo('stylesheet_directory'), '/img/default-image.jpg','" alt="Revista T" />';
+								echo '<img class="default-header-img" src="', get_bloginfo('stylesheet_directory'), '/img/default-image.jpg','" alt="Felicitas Saurenbach" />';
 							}
 						}
 						$first = false;
 					}
 					endwhile;
 					wp_reset_query();
-				}
+				}*/
+
+				
 				else {
 					// echo '<img class="default-header-img " src="', get_bloginfo('stylesheet_directory'), '/img/default-image.jpg','" alt="Felicitas Saurenbach" />';
 					if (get_background_image()){

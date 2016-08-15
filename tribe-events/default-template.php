@@ -17,10 +17,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <div id="tribe-events-pg-template" class="content-area">
+
 	<?php tribe_events_before_html(); ?>
 	<?php tribe_get_view(); ?>
-	<?php tribe_events_after_html(); ?>
-</div> <!-- #tribe-events-pg-template -->
+	<?php  ?>
+    <?php if( !is_archive() ) { 
+		tribe_events_after_html();  
+	} 
+	else {
+		echo "</div>"; 
+	} 
+	?>
+</div> <!-- #tribe-events-pg-template -->  
 <?php
 get_sidebar();
 get_footer();

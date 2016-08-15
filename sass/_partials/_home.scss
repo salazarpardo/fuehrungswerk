@@ -179,7 +179,16 @@
 		@include grid-row;
 	}
 	.customer {
-		@include grid-column(2);
+		
+		@include grid-column;
+
+		  @include breakpoint(small) {
+			@include grid-column(2);
+		  }
+		  @include breakpoint(medium) {
+			@include grid-column(2);
+		  }
+  
 		@include transition(filter 0.3s ease-in-out);
         @include filter(grayscale(1));
         @include thumbnail;
@@ -200,6 +209,6 @@
 	}
 	.wp-post-image {
 		max-height: 60px;
-		width: auto;
-	}
+		width: auto; 
+		}
 }

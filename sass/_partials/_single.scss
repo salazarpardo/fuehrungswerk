@@ -308,7 +308,6 @@
 	}
 }
 .tribe-events-schedule, .tribe-event-schedule-details, .tribe-events-event-cost, .tribe-events-list-separator-month {
-	font-size: rem-calc(14);
 	margin-bottom: rem-calc(10);
 	display: inline-block;
 }
@@ -325,6 +324,9 @@
 	.tribe-events-event-meta {
 	    @include callout-base;
 	    @include grid-row;
+		margin-top: rem-calc(30);
+		display:none;
+		visibility:hidden;
 	    .tribe-events-meta-group {
 	    	@include grid-column(12);
 	    	margin-bottom: rem-calc(30);
@@ -339,11 +341,12 @@
 	}
 	.tribe-events-schedule {
 		h2 {
-		    font-size: inherit;
+		    font-size: rem-calc(18);
 		    vertical-align: inherit;
 		}
 		.tribe-events-divider {
 			margin: 0;
+			display:none;
 		}
 	}
 	.tribe-events-back {
@@ -375,6 +378,15 @@
     text-transform: uppercase;
     margin: 0 0 rem-calc(30);
 }
+.tribe-events-content .wpfs.panel.callout {
+    border: none;
+    background: map-get($foundation-palette, primary);
+    color: white;
+    text-transform: none;
+    margin: rem-calc(30) 0;
+	text-align:center;
+	font-weight:$bold;
+}
 .columns {
 	.wpfs.panel.callout {
 		margin: 0;
@@ -403,7 +415,7 @@
 	}
 	.time, .venue {
     	text-transform:uppercase;
-		font-size: rem-calc(16);
+		font-size: rem-calc(14);
 	}
 	p {
     	font-size:1rem !important;

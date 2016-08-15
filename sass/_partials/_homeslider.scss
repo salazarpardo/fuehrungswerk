@@ -133,6 +133,7 @@ $full-header-height: rem-calc(168);
 }
 .slick-dots {
     bottom: rem-calc(-60);
+	margin-left:0;
     li {
         button:before {
             content: "";

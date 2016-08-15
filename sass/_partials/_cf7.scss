@@ -1,4 +1,5 @@
-.entry-content div.wpcf7 fieldset   {
+.entry-content div.wpcf7 fieldset,
+.tribe-events-after-html div.wpcf7 fieldset   {
 	background-color: #f2f2f2;
 	padding-top: rem-calc(20);
 	padding-right: rem-calc(40);
@@ -7,7 +8,6 @@
 	border-top: 2px solid map-get($foundation-palette, primary);
 	margin-top: rem-calc(20);
 	margin-bottom: rem-calc(20);
-	
    
 	
 	/* Style form elements */

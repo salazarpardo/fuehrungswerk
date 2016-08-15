@@ -2,8 +2,9 @@
     background-color: map-get($foundation-palette, primary);
     padding: map-get($grid-column-gutter, medium)*2 0;
     @include box-shadow(0 1px 0 #0070a0 inset);
-    ul, li, p, a, label, .entry-meta {
+    ul, li, p, a, .entry-meta {
         color: $white;
+		margin-bottom: rem-calc(25);
     }
     .widget-row {
         @include grid-row;
@@ -27,12 +28,12 @@
         }
     }
     .entry-title {
-        font-size: rem-calc(18);
-        margin-bottom: rem-calc(25);
+        font-size: rem-calc(16);
+        margin-bottom: rem-calc(5);
         font-weight: $bold;
     }
     .entry-meta {
-        font-size: rem-calc(16);
+        font-size: rem-calc(14);
     }
     .entry-excerpt {
         font-size: rem-calc(14);

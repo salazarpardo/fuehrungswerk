@@ -237,9 +237,51 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+
+// Check if page is direct child
+function is_child( $page_id ) {
+	global $post;
+	if( is_page() && ($post->post_parent != '') ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+/*** Termine Plugin **/
+
+// Singular
+add_filter( 'tribe_event_label_singular', 'event_display_name' );
+function event_display_name() {
+	return 'Termin';
+}
+add_filter( 'tribe_event_label_singular_lowercase', 'event_display_name_lowercase' );
+function event_display_name_lowercase() {
+	return 'termin';
+}
+// Plural
+add_filter( 'tribe_event_label_plural', 'event_display_name_plural' );
+function event_display_name_plural() {
+	return 'Termine';
+}
+add_filter( 'tribe_event_label_plural_lowercase', 'event_display_name_plural_lowercase' );
+function event_display_name_plural_lowercase() {
+	return 'termine';
+}
+
+add_filter( 'tribe_get_cost', 'tribe_filter_cost_for_eur', 20, 3 );
+  
+function tribe_filter_cost_for_eur( $cost, $post_id, $with_currency_symbol ) {
+    if ( ! empty( $cost ) && 'Free' !== $cost ) {
+        $cost = sprintf( '%s', str_ireplace( 'EUR', 'EUR ', $cost ) );
+    }
+    return $cost;
+}
+
 /**
  * Remove default styles for admin bar.
  */
+ 
 add_action('get_header', 'remove_admin_login_header');
 function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
